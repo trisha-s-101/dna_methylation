@@ -18,11 +18,6 @@ The dataset contains ~27,500 features (CpG methylation values, each between 0 an
 
 ### Results
 
-| Model | Train R² | Val R² | Test R² | RMSE (test) |
-|---|---|---|---|---|
-| Linear Regression (10 features, threshold 0.5) | 0.51 | 0.48 | — | — |
-| Polynomial Regression (degree 2, 5 features, threshold 0.52) | 0.53 | 0.45 | 0.48 | 11.90 |
-
 The polynomial model's test performance landed close to the linear model's validation performance, with only a marginal RMSE difference (11.90 vs. 11.85). The gap between polynomial training R² (0.53) and test R² (0.48) points to mild overfitting, likely driven by the small selected feature set (5–10 CpGs) combined with the added flexibility of polynomial expansion.
 
 ## Extension: Comparison against the Horvath 2013 clock
